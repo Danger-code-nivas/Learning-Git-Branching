@@ -2,17 +2,36 @@
 <p>Learning Git branches helps you manage different versions of your code without affecting the main project. It makes experimentation and collaboration easy by keeping changes organized and isolated</p>
 <h2>Phase 1</h2>
 <h3>Level 1</h3>
-<P></P>
+<h5>Introduced To Git Commits</h5>
+<P>Learning Git branches helps you create separate paths to work on new ideas or fixes without affecting the main code. Getting introduced to Git commits teaches you how to save changes step by step, making teamwork and project tracking simple and clear.</P>
+<img width="1917" height="854" alt="Screenshot 2025-12-23 122415" src="https://github.com/user-attachments/assets/1a8b6438-b241-4c9c-a7bd-d275066228ce" />
+<h5>Code:</h5>
+**commands to be Executed**:
+``` git commit
+```
+
+
 <img width="1908" height="909" alt="Screenshot 2025-12-22 143855" src="https://github.com/user-attachments/assets/ca44a7bf-1c10-4577-8bdf-2dae9ec8466c" />
+
 <h3>Level 2</h3>
+<h5>Branching in Git</h5>
+<P>Branching in Git means creating a separate line of development where you can make changes without affecting the main project. It’s useful because it lets you experiment, fix bugs, or add new features safely before merging everything together.</P>
 <img width="1910" height="907" alt="Screenshot 2025-12-22 144146" src="https://github.com/user-attachments/assets/7aa73f08-40dc-4edf-a011-39cc64d3b5fc" />
+
 <h3>Level 3</h3>
+<h5>Merging in Git</h5>
+<p>Merging in Git means combining changes from one branch into another to bring everyone’s work together. It’s useful because it lets teams integrate updates smoothly and keep the project code up to date.</p>
 <img width="1918" height="1012" alt="Screenshot 2025-12-22 145041" src="https://github.com/user-attachments/assets/7611ad1e-c066-4a28-80e0-d4722469fa38" />
+
 <h3>Level 4</h3>
+<h5>Rebasing in Git</h5>
+<p>Rebasing in Git means moving or combining a series of commits onto a new base to create a cleaner project history. It’s useful because it keeps the commit timeline organized and makes collaboration easier to follow.</p>
 <img width="1908" height="1010" alt="Screenshot 2025-12-22 145401" src="https://github.com/user-attachments/assets/37b9a0a0-fc98-473d-92d2-da733f8d0cb0" />
 
 <h2>Phase 2</h2>
 <h3>Level 1</h3>
+<h5>Detach yo' HEAD</h5>
+<p>In Git, “detached HEAD” means you’re viewing or working on a specific commit instead of a branch. It’s useful for testing or checking old versions of your project without changing your main branches.</p>
 <img width="1910" height="913" alt="Screenshot 2025-12-22 145704" src="https://github.com/user-attachments/assets/0fc9f744-937c-47c7-894f-2cc99d381e5c" />
 <h3>Level 2</h3>
 <img width="1919" height="910" alt="Screenshot 2025-12-22 151747" src="https://github.com/user-attachments/assets/5368df7e-c9e6-4d41-b412-48d7025f7040" />
