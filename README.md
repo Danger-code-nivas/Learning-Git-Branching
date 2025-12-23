@@ -171,7 +171,7 @@ git rebase overHere
 <h2>Phase 4</h2>
 <h3>Level 1</h3>
 <h5>Grabbing Just 1 Commit</h5>
-<p></p> 
+<p>Grabbing just 1 commit in Git means using cherry-pick to apply a single specific commit from anywhere to your current branch. It's useful because it lets you pull in one fix or feature without merging whole branches, keeping your changes precise and history clean.</p> 
 <img width="1916" height="853" alt="Screenshot 2025-12-24 003204" src="https://github.com/user-attachments/assets/a59ef677-7a52-419c-a5c0-7b15ad7e5483" />
 
 <h5>Commands used:</h5>
@@ -188,7 +188,7 @@ git branch -f main c4'
 
 <h3>Level 2</h3>
 <h5>Juggling Commits</h5>
-<p></p>
+<p>Juggling commits in Git means using interactive rebase to reorder, combine, or split commits for a cleaner project history. It's useful because it helps tidy up your work, fix mistakes, and present a professional timeline when collaborating with others.</p>
 <img width="1917" height="850" alt="Screenshot 2025-12-24 003646" src="https://github.com/user-attachments/assets/0675b010-9491-4946-84eb-4b77494e8c0e" />
 
 <h5>Commands used:</h5>
@@ -213,7 +213,7 @@ git branch -f main c3''
 
 <h3>Level 3</h3>
 <h5>Juggling Commits #2</h5>
-<p></p>
+<p>Juggling commits #2 in Git means advancing your skills with interactive rebase to fix up, edit, or drop specific commits during a session. It's useful because it gives precise control over history tweaks, making your project narrative smoother and more shareable with teams.</p>
 <img width="1917" height="852" alt="Screenshot 2025-12-24 003859" src="https://github.com/user-attachments/assets/d8b64661-8836-4184-bfd5-fe3740be9030" />
 
 <h5>Commands used:</h5>
@@ -233,7 +233,7 @@ git cherry-pick c3
 
 <h3>Level 4</h3>
 <h5>Git Tags</h5>
-<p></p>
+<p>Git tags mark specific commits with a fixed label, like "v1.0" for a release version. They're useful because they create easy-to-remember snapshots of your code for quick reference, rollbacks, or sharing stable points with teams.</p>
 <img width="1919" height="848" alt="Screenshot 2025-12-24 004117" src="https://github.com/user-attachments/assets/79dee88d-54cb-4630-9e5c-e66c356e9d3c" />
 
 <h5>Commands used:</h5>
@@ -250,7 +250,7 @@ git tag v1 c2
 
 <h3>Level 5</h3>
 <h5>Git Describe</h5>
-<p></p>
+<p>Git describe means finding the closest tag to a commit and labeling it with the tag name plus commit count and hash, like "v1.2-5-gabc123." It's useful because it creates human-readable version identifiers for builds, releases, or scripts without memorizing long hashes.</p>
 <img width="1919" height="851" alt="Screenshot 2025-12-24 004249" src="https://github.com/user-attachments/assets/96c0e093-7cd2-4ab7-a3c6-90f0a9f29d9f" />
 
 <h5>Commands used:</h5>
@@ -267,7 +267,7 @@ git commit
 <h2>Phase 5</h2>
 <h3>Level 1</h3>
 <h5>Rebasing over 9000 times</h5>
-<p></p>
+<p>Rebasing over 9000 times in Git means practicing interactive rebase extensively on large commit histories to master advanced editing like squashing thousands of changes. It's useful because it builds confidence in reshaping complex timelines cleanly, preparing you for real-world team projects with messy histories.</p>
 <img width="1917" height="847" alt="Screenshot 2025-12-24 005744" src="https://github.com/user-attachments/assets/428a08d2-17b1-448c-8812-81265ca93caa" />
 
 <h5>Commands used:</h5>
@@ -297,7 +297,7 @@ git rebase bugFix
 
 <h3>Level 2</h3>
 <h5>Multiple parents</h5>
-<p></p>
+<p>Multiple parents in Git means a commit (like a merge) has more than one parent commit, showing where branches combined. It's useful because it tracks exactly how histories merged, helping you understand project evolution and resolve conflicts clearly.</p>
 <img width="1919" height="851" alt="Screenshot 2025-12-24 005851" src="https://github.com/user-attachments/assets/5b6bd420-71bb-47c1-8cff-899dbf422442" />
 
 <h5>Commands used:</h5>
@@ -315,7 +315,7 @@ git checkout main
 
 <h3>Level 3</h3>
 <h5>Branch Spaghetti</h5>
-<p></p>
+<p>Branch spaghetti in Git means a tangled mess of overlapping branches and merges that make the history graph look like messy noodles. It's useful to recognize because it teaches you to clean it up with rebase or resets, keeping your project history readable and professional.</p>
 <img width="1915" height="851" alt="Screenshot 2025-12-24 005941" src="https://github.com/user-attachments/assets/568eb45e-e1c6-4f85-aed7-bfdfc19662bd" />
 
 <h5>Commands used:</h5>
