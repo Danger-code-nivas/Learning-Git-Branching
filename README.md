@@ -1,6 +1,8 @@
 <h1>Learning Git Branch</h1>
+<p>Learning Git branches helps you manage different versions of your code without affecting the main project. It makes experimentation and collaboration easy by keeping changes organized and isolated</p>
 <h2>Phase 1</h2>
 <h3>Level 1</h3>
+<P></P>
 <img width="1908" height="909" alt="Screenshot 2025-12-22 143855" src="https://github.com/user-attachments/assets/ca44a7bf-1c10-4577-8bdf-2dae9ec8466c" />
 <h3>Level 2</h3>
 <img width="1910" height="907" alt="Screenshot 2025-12-22 144146" src="https://github.com/user-attachments/assets/7aa73f08-40dc-4edf-a011-39cc64d3b5fc" />
