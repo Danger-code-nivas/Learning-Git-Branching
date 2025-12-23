@@ -129,32 +129,221 @@ git revert pushed
 
 <img width="1908" height="913" alt="Screenshot 2025-12-22 152052" src="https://github.com/user-attachments/assets/f121b653-9d83-42af-9170-5e06fe1c2764" />
 
+
 <h2>Phase 3</h2>
 <h3>Level 1</h3>
-<img width="1910" height="915" alt="Screenshot 2025-12-22 184642" src="https://github.com/user-attachments/assets/54d5d324-4e9c-4076-9b88-e21ddc213dd1" />
+<h5>Cherry-pick in Git</h5>
+<p>Cherry-pick in Git means grabbing a specific commit from one branch and applying it exactly to another branch. It's useful because it lets you selectively move fixes or features without merging entire histories, keeping your project clean and targeted.</p>
+<img width="1919" height="853" alt="Screenshot 2025-12-24 000134" src="https://github.com/user-attachments/assets/7e959b01-af86-4031-a278-6df64fc344bb" />
+
+<h5>Code:</h5>
+
+```
+
+git cherry-pick c3 c4 c7
+
+```
+<img width="1902" height="952" alt="Screenshot 2025-12-22 152339" src="https://github.com/user-attachments/assets/a5f4c1f7-2552-42ff-ab4c-bdb031886dfd" />
+
+
 <h3>Level 2</h3>
-<img width="1912" height="913" alt="Screenshot 2025-12-22 185617" src="https://github.com/user-attachments/assets/79643b75-1dfb-4655-9d33-1718238d87cd" />
+<h5>Interactive Rebase Intro</h5>
+<p>Interactive rebase in Git means editing your commit history by reordering, squashing, or rewriting commits in an interactive session. It's useful because it cleans up messy histories, fixes errors, and makes your project timeline look professional before sharing with a team.</p>
+<img width="1919" height="850" alt="Screenshot 2025-12-24 000511" src="https://github.com/user-attachments/assets/5e435952-b2d6-4c08-92ab-0e439e6be582" />
+
+<h5>Commands used:</h5>
+
+```
+
+git rebase -i HEAD~4
+git branch -f main c5
+git branch -f overHere c5'
+git chechout c5'
+git checkout main
+git rebase overHere
+
+
+```
+<img width="1910" height="915" alt="Screenshot 2025-12-22 184642" src="https://github.com/user-attachments/assets/47c273ba-ef72-407d-81bc-86be26484d64" />
+
+
 
 <h2>Phase 4</h2>
 <h3>Level 1</h3>
-<img width="1904" height="907" alt="Screenshot 2025-12-22 190926" src="https://github.com/user-attachments/assets/572d1cbc-70c7-4261-8ecf-23d48f37c87b" />
+<h5>Grabbing Just 1 Commit</h5>
+<p></p> 
+<img width="1916" height="853" alt="Screenshot 2025-12-24 003204" src="https://github.com/user-attachments/assets/a59ef677-7a52-419c-a5c0-7b15ad7e5483" />
+
+<h5>Commands used:</h5>
+
+```
+
+git rebase -i HEAD~3
+git checkout main
+git branch -f main c4'
+
+```
+
+<img width="1904" height="907" alt="Screenshot 2025-12-22 190926" src="https://github.com/user-attachments/assets/b6093856-ccb5-452b-9222-3bb551583bb3" />
+
 <h3>Level 2</h3>
-<img width="1900" height="908" alt="Screenshot 2025-12-22 213502" src="https://github.com/user-attachments/assets/12477447-f80a-47bb-aa90-77edf0519714" />
+<h5>Juggling Commits</h5>
+<p></p>
+<img width="1917" height="850" alt="Screenshot 2025-12-24 003646" src="https://github.com/user-attachments/assets/0675b010-9491-4946-84eb-4b77494e8c0e" />
+
+<h5>Commands used:</h5>
+
+```
+
+git rebase -i HEAD~2
+git checkout newImage
+git rebase caption
+git branch -f newImage c2
+git branch -f caption c3
+git checkout caption
+git rebase -i HEAD~2
+git checkout main
+git branch -f main c3''
+
+
+```
+
+<img width="1900" height="908" alt="Screenshot 2025-12-22 213502" src="https://github.com/user-attachments/assets/40874791-2d74-45b4-a0e9-f6034d82fb19" />
+
+
 <h3>Level 3</h3>
-<img width="1900" height="912" alt="Screenshot 2025-12-22 221001" src="https://github.com/user-attachments/assets/d46a978c-afc5-44bf-a421-1c6ad4844a45" />
+<h5>Juggling Commits #2</h5>
+<p></p>
+<img width="1917" height="852" alt="Screenshot 2025-12-24 003859" src="https://github.com/user-attachments/assets/d8b64661-8836-4184-bfd5-fe3740be9030" />
+
+<h5>Commands used:</h5>
+
+```
+
+git checkout newImage
+git checkout main
+git cherry-pick c2
+git branch -f main c1
+git cherry-pick c2
+git cherry-pick c3
+
+```
+
+<img width="1900" height="912" alt="Screenshot 2025-12-22 221001" src="https://github.com/user-attachments/assets/026b9e9e-ff40-4fef-b9b3-c0180116b05e" />
+
 <h3>Level 4</h3>
-<img width="1902" height="908" alt="Screenshot 2025-12-22 221242" src="https://github.com/user-attachments/assets/9a7b115a-67c3-47fa-92ae-c4c5741210b2" />
+<h5>Git Tags</h5>
+<p></p>
+<img width="1919" height="848" alt="Screenshot 2025-12-24 004117" src="https://github.com/user-attachments/assets/79dee88d-54cb-4630-9e5c-e66c356e9d3c" />
+
+<h5>Commands used:</h5>
+
+```
+
+git tag v0 c1
+git checkout c2
+git tag v1 c2
+
+```
+
+<img width="1902" height="908" alt="Screenshot 2025-12-22 221242" src="https://github.com/user-attachments/assets/a7a8a6b3-9228-4f10-9381-1a78917f36e4" />
+
 <h3>Level 5</h3>
-<img width="1901" height="905" alt="Screenshot 2025-12-22 221351" src="https://github.com/user-attachments/assets/01af4c8d-29b3-4300-b96b-0d382ebeb786" />
+<h5>Git Describe</h5>
+<p></p>
+<img width="1919" height="851" alt="Screenshot 2025-12-24 004249" src="https://github.com/user-attachments/assets/96c0e093-7cd2-4ab7-a3c6-90f0a9f29d9f" />
+
+<h5>Commands used:</h5>
+
+```
+
+git commit
+
+```
+
+<img width="1901" height="905" alt="Screenshot 2025-12-22 221351" src="https://github.com/user-attachments/assets/61373d7a-a9ff-4922-90a3-304b30bc785e" />
+
 
 <h2>Phase 5</h2>
 <h3>Level 1</h3>
-<img width="1900" height="920" alt="Screenshot 2025-12-22 222036" src="https://github.com/user-attachments/assets/4aabbb71-7c1e-477a-9566-7231faacab92" />
+<h5>Rebasing over 9000 times</h5>
+<p></p>
+<img width="1917" height="847" alt="Screenshot 2025-12-24 005744" src="https://github.com/user-attachments/assets/428a08d2-17b1-448c-8812-81265ca93caa" />
+
+<h5>Commands used:</h5>
+
+```
+
+git checkout bugFix
+git rebase main
+git branch -f main c4
+git checkout main
+git rebase bugFix
+git branch -f main c5
+git branch -f bugFix c4'
+git rebase bugFix
+git branch -f main c6
+git branch -f bugFix c5'
+git rebase bugFix
+git branch -f main c7
+git branch -f bugFix c6'
+git rebase bugFix
+
+```
+
+<img width="1900" height="920" alt="Screenshot 2025-12-22 222036" src="https://github.com/user-attachments/assets/29bd0508-3f14-499f-a4c3-c0be5cc0ee8b" />
+
+
+
 <h3>Level 2</h3>
-<img width="1895" height="902" alt="Screenshot 2025-12-22 222054" src="https://github.com/user-attachments/assets/0f869887-9460-4b23-921e-911c674caf91" />
+<h5>Multiple parents</h5>
+<p></p>
+<img width="1919" height="851" alt="Screenshot 2025-12-24 005851" src="https://github.com/user-attachments/assets/5b6bd420-71bb-47c1-8cff-899dbf422442" />
+
+<h5>Commands used:</h5>
+
+```
+
+git checkout c2
+git branch bugWork
+git checkout main
+
+```
+
+<img width="1893" height="910" alt="Screenshot 2025-12-22 222445" src="https://github.com/user-attachments/assets/31c05ff0-c6cc-41c3-bf77-148cdc378a17" />
+
+
 <h3>Level 3</h3>
-<img width="1893" height="910" alt="Screenshot 2025-12-22 222445" src="https://github.com/user-attachments/assets/287893a1-809f-4d90-802b-ebbf0a6a42fc" />
-<h3>Level 4</h3>
-<img width="1874" height="915" alt="Screenshot 2025-12-22 224706" src="https://github.com/user-attachments/assets/d3235e7c-76c5-49bf-b1ff-581f0f9265f2" />
-<h3>Level 1</h3>
-<img width="1906" height="912" alt="Screenshot 2025-12-22 224631" src="https://github.com/user-attachments/assets/f31536fa-0383-465f-bd75-f01f4839d93a" />
+<h5>Branch Spaghetti</h5>
+<p></p>
+<img width="1915" height="851" alt="Screenshot 2025-12-24 005941" src="https://github.com/user-attachments/assets/568eb45e-e1c6-4f85-aed7-bfdfc19662bd" />
+
+<h5>Commands used:</h5>
+
+```
+
+git checkout three
+git branch -f three c4
+git rebase -i HEAD~3
+git checkout main
+git rebase -i HEAD~4
+git checkout three
+git rebase main
+git branch -f three c2
+git branch -f main c4'
+git checkout main
+git cherry-pick c3 c2
+git branch -f main c3'
+git branch -f two c4''
+git rebase two
+git branch -f main c2'
+git branch -f two c3''
+git rebase two
+git branch -f main c5
+git branch -f two c2''
+git branch -f one c2'
+
+```
+
+<img width="1906" height="912" alt="Screenshot 2025-12-22 224631" src="https://github.com/user-attachments/assets/c45e5290-698a-4718-a202-74afec10ee48" />
+
